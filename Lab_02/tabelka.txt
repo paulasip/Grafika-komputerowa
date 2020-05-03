@@ -8,11 +8,11 @@ Zdjêcie	Odpowiedz sieci - czy kobieta?
 14.jpg	Nie
 15.jpg	Nie
 16.jpg	Nie
-17.jpg	Nie
+17.jpg	Tak
 18.jpg	Tak
-19.jpg	Tak
+19.jpg	Nie
 2.jpg	Nie
-20.jpg	Tak
+20.jpg	Nie
 21.jpg	Nie
 22.jpg	Nie
 23.jpg	Nie
@@ -20,11 +20,11 @@ Zdjêcie	Odpowiedz sieci - czy kobieta?
 25.jpg	Nie
 3.jpg	Tak
 4.jpg	Tak
-5.jpg	Tak
+5.jpg	Nie
 6.jpg	Nie
 7.jpg	Nie
-8.jpg	Tak
-9.jpg	Tak
+8.jpg	Nie
+9.jpg	Nie
 
 Mezczyzni
 Zdjêcie	Odpowiedz sieci - czy mezczyzna?
@@ -36,7 +36,7 @@ Zdjêcie	Odpowiedz sieci - czy mezczyzna?
 14.jpg	Tak
 15.jpg	Tak
 16.jpg	Tak
-17.jpg	Nie
+17.jpg	Tak
 18.jpg	Tak
 19.jpg	Tak
 2.jpg	Tak
@@ -48,14 +48,25 @@ Zdjêcie	Odpowiedz sieci - czy mezczyzna?
 25.jpg	Tak
 3.jpg	Tak
 4.jpg	Tak
-5.jpg	Nie
+5.jpg	Tak
 6.jpg	Tak
 7.jpg	Tak
 8.jpg	Tak
 9.jpg	Tak
 
-Dobrze sklasyfikowane kobiety: 9/25
-Dobrze sklasyfikowani mezczyzni: 23/25
-Dokladnosc klasyfikacji kobiet: 36.0%
-Dokladnosc klasyfikacji mezczyzn: 92.0%
-Ogolna dokladnosc klasyfikacji: 64.0%
+Dobrze sklasyfikowane kobiety: 5/25
+Dobrze sklasyfikowani mezczyzni: 25/25
+Dokladnosc klasyfikacji kobiet: 20.0%
+Dokladnosc klasyfikacji mezczyzn: 100.0%
+Ogolna dokladnosc klasyfikacji: 60.0%
+
++----------------------+------------------------+
+|                      | Faktyczna p³eæ osoby   |
+|                      | na zdjêciu             |
++----------------------+------------------------+
+|                      | Kobieta    | Mê¿czyzna +
++----------------------+------------------------+
+| OdpowiedŸ | Kobieta  |     5    |    20    |
++-----------+----------+------------+-----------+
+| sieci     | Mê¿czyzna|     0    |    25    |
++----------------------+------------------------+

@@ -1,3 +1,4 @@
+# coding=utf8
 #Sieć neuronowa
  
 #Bibioteki do obliczen tensorowych
@@ -19,7 +20,6 @@ import os
  
 from keras.utils.np_utils import to_categorical
 from keras.models import load_model
-
 import Lab02
  
 # returns a compiled model
@@ -30,7 +30,7 @@ genderModel.summary() # Display summary
 ImgWidth = 100
 ImgHeight = 100
  
-ODPOWIEDZ_MEZCZYNA = 0
+ODPOWIEDZ_MEZCZYZNA = 0
 ODPOWIEDZ_KOBIETA = 1
  
  
@@ -76,7 +76,7 @@ result_str += "\n"
 result_str += "Zdjęcie\tOdpowiedz sieci - czy mezczyzna?"
 result_str += "\n"
 for f in female_files:
-    resp = "Tak" if male_prediction[i] == ODPOWIEDZ_MEZCZYNA else "Nie"
+    resp = "Tak" if male_prediction[i] == ODPOWIEDZ_MEZCZYZNA else "Nie"
     result_str += f + "\t" + resp
     result_str += "\n"
     i += 1
@@ -86,12 +86,12 @@ result_str += "\n"
  
 result_str += "Dobrze sklasyfikowane kobiety: " + str(female_prediction.count(ODPOWIEDZ_KOBIETA)) + '/' + str(len(female_files))
 result_str += "\n"
-result_str += "Dobrze sklasyfikowani mezczyzni: " + str(male_prediction.count(ODPOWIEDZ_MEZCZYNA)) + '/' + str(len(male_files))
+result_str += "Dobrze sklasyfikowani mezczyzni: " + str(male_prediction.count(ODPOWIEDZ_MEZCZYZNA)) + '/' + str(len(male_files))
 result_str += "\n"
  
 female_accuracy = female_prediction.count(ODPOWIEDZ_KOBIETA) / len(female_files)
-male_accuracy = male_prediction.count(ODPOWIEDZ_MEZCZYNA) / len(male_files)
-overall_accuracy = (female_prediction.count(ODPOWIEDZ_KOBIETA) + male_prediction.count(ODPOWIEDZ_MEZCZYNA)) / (len(female_files) + len(male_files))
+male_accuracy = male_prediction.count(ODPOWIEDZ_MEZCZYZNA) / len(male_files)
+overall_accuracy = (female_prediction.count(ODPOWIEDZ_KOBIETA) + male_prediction.count(ODPOWIEDZ_MEZCZYZNA)) / (len(female_files) + len(male_files))
  
 result_str += "Dokladnosc klasyfikacji kobiet: " + str(female_accuracy * 100) + '%'
 result_str += "\n"
@@ -99,6 +99,21 @@ result_str += "Dokladnosc klasyfikacji mezczyzn: " + str(male_accuracy * 100) + 
 result_str += "\n"
 result_str += "Ogolna dokladnosc klasyfikacji: " + str(overall_accuracy * 100) + '%'
 result_str += "\n"
+ 
+ 
+result_str += '''
++----------------------+------------------------+
+|                      | Faktyczna płeć osoby   |
+|                      | na zdjęciu             |
++----------------------+------------------------+
+|                      | Kobieta    | Mężczyzna +
++----------------------+------------------------+
+| Odpowiedź | Kobieta  |     {0}    |    {1}    |
++-----------+----------+------------+-----------+
+| sieci     | Mężczyzna|     {2}    |    {3}    |
++----------------------+------------------------+
+'''.format(female_prediction.count(ODPOWIEDZ_KOBIETA), female_prediction.count(ODPOWIEDZ_MEZCZYZNA), male_prediction.count(ODPOWIEDZ_KOBIETA), male_prediction.count(ODPOWIEDZ_MEZCZYZNA))
+ 
  
  
 with open('tabelka.txt', 'w') as f:
