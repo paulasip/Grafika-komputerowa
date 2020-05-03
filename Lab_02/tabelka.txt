@@ -1,0 +1,61 @@
+Kobiety
+Zdjêcie	Odpowiedz sieci - czy kobieta?
+1.jpg	Nie
+10.jpg	Nie
+11.jpg	Nie
+12.jpg	Nie
+13.jpg	Nie
+14.jpg	Nie
+15.jpg	Nie
+16.jpg	Nie
+17.jpg	Nie
+18.jpg	Tak
+19.jpg	Tak
+2.jpg	Nie
+20.jpg	Tak
+21.jpg	Nie
+22.jpg	Nie
+23.jpg	Nie
+24.jpg	Tak
+25.jpg	Nie
+3.jpg	Tak
+4.jpg	Tak
+5.jpg	Tak
+6.jpg	Nie
+7.jpg	Nie
+8.jpg	Tak
+9.jpg	Tak
+
+Mezczyzni
+Zdjêcie	Odpowiedz sieci - czy mezczyzna?
+1.jpg	Tak
+10.jpg	Tak
+11.jpg	Tak
+12.jpg	Tak
+13.jpg	Tak
+14.jpg	Tak
+15.jpg	Tak
+16.jpg	Tak
+17.jpg	Nie
+18.jpg	Tak
+19.jpg	Tak
+2.jpg	Tak
+20.jpg	Tak
+21.jpg	Tak
+22.jpg	Tak
+23.jpg	Tak
+24.jpg	Tak
+25.jpg	Tak
+3.jpg	Tak
+4.jpg	Tak
+5.jpg	Nie
+6.jpg	Tak
+7.jpg	Tak
+8.jpg	Tak
+9.jpg	Tak
+
+Dobrze sklasyfikowane kobiety: 9/25
+Dobrze sklasyfikowani mezczyzni: 23/25
+Dokladnosc klasyfikacji kobiet: 36.0%
+Dokladnosc klasyfikacji mezczyzn: 92.0%
+Ogolna dokladnosc klasyfikacji: 64.0%
